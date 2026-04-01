@@ -6,49 +6,49 @@ import { ArrowRight, Check, Zap } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    description: "For small teams getting started",
-    price: { monthly: 0, annual: 0 },
+    description: "Für den Einstieg in professionellen Content",
+    price: { monthly: null, annual: null },
     features: [
-      "1 AI agent",
-      "1,000 conversations/month",
-      "3 channels",
-      "Basic analytics",
-      "Community support",
+      "Social-Media-Audit",
+      "Content-Strategie",
+      "4 Reels / Monat",
+      "1 Plattform",
+      "Monatliches Reporting",
     ],
-    cta: "Start free",
+    cta: "Erstgespräch buchen",
     highlight: false,
   },
   {
     name: "Growth",
-    description: "For teams scaling customer support",
-    price: { monthly: 99, annual: 79 },
+    description: "Für Restaurants, die wachsen wollen",
+    price: { monthly: null, annual: null },
     features: [
-      "5 AI agents",
-      "25,000 conversations/month",
-      "All channels",
-      "Agent Assist",
-      "Conversation Intelligence",
-      "Priority support",
-      "Custom training",
+      "Alles aus Starter",
+      "12 Reels / Monat",
+      "Instagram & TikTok",
+      "Story-Content",
+      "Food-Fotografie",
+      "Community Management",
+      "Trend-Monitoring",
     ],
-    cta: "Start trial",
+    cta: "Erstgespräch buchen",
     highlight: true,
   },
   {
-    name: "Enterprise",
-    description: "For large-scale operations",
+    name: "Premium",
+    description: "Full-Service für maximale Sichtbarkeit",
     price: { monthly: null, annual: null },
     features: [
-      "Unlimited agents",
-      "Unlimited conversations",
-      "24/7 dedicated support",
-      "On-premise deployment",
-      "SLA guarantee",
-      "HIPAA & SOC 2",
-      "Custom integrations",
-      "Dedicated success manager",
+      "Alles aus Growth",
+      "20+ Reels / Monat",
+      "Alle Plattformen",
+      "Wöchentliche Drehtage",
+      "Performance Marketing",
+      "Influencer-Kooperationen",
+      "Dedizierter Ansprechpartner",
+      "Priority Support",
     ],
-    cta: "Contact sales",
+    cta: "Erstgespräch buchen",
     highlight: false,
   },
 ];
@@ -78,14 +78,14 @@ export function PricingSection() {
           <div className="lg:col-span-7">
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
               <span className="w-12 h-px bg-foreground/30" />
-              Pricing
+              Pakete
             </span>
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Pay for
+              Investieren Sie in
               <br />
-              <span className="text-stroke">results.</span>
+              <span className="text-stroke">Ergebnisse.</span>
             </h2>
           </div>
           
@@ -147,7 +147,7 @@ export function PricingSection() {
                         <span className="text-muted-foreground text-sm">/month</span>
                       </div>
                     ) : (
-                      <span className="text-4xl font-display">Custom</span>
+                      <span className="text-4xl font-display">Auf Anfrage</span>
                     )}
                     {plan.price.monthly !== null && plan.price.monthly > 0 && (
                       <p className="text-xs text-muted-foreground mt-2 font-mono">
@@ -190,19 +190,19 @@ export function PricingSection() {
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              End-to-end encryption
+              Keine Mindestlaufzeit
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Full conversation logs
+              Kostenloses Erstgespräch
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              135+ languages
+              100% Kundenzufriedenheit
             </span>
           </div>
           <a href="#" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+            Alle Leistungen vergleichen
           </a>
         </div>
       </div>

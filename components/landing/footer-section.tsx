@@ -4,34 +4,34 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const footerLinks = {
-  Product: [
-    { name: "AI Agents", href: "#features" },
-    { name: "Agent Assist", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Integrations", href: "#integrations" },
+  Leistungen: [
+    { name: "Content-Produktion", href: "#features" },
+    { name: "Strategie", href: "#features" },
+    { name: "Pakete", href: "#pricing" },
+    { name: "Referenzen", href: "#integrations" },
   ],
-  Developers: [
-    { name: "Documentation", href: "#developers" },
-    { name: "API Reference", href: "#developers" },
-    { name: "Webhooks", href: "#" },
-    { name: "Status", href: "#" },
+  Unternehmen: [
+    { name: "Über uns", href: "#security" },
+    { name: "Team", href: "#security" },
+    { name: "Karriere", href: "#", badge: "Hiring" },
+    { name: "Kontakt", href: "#" },
   ],
-  Company: [
-    { name: "About", href: "#" },
+  Ressourcen: [
     { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
-    { name: "Contact", href: "#" },
+    { name: "Portfolio", href: "#integrations" },
+    { name: "FAQ", href: "#" },
+    { name: "Erstgespräch", href: "#" },
   ],
-  Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Security", href: "#security" },
+  Rechtliches: [
+    { name: "Datenschutz", href: "#" },
+    { name: "Impressum", href: "#" },
+    { name: "AGB", href: "#" },
   ],
 };
 
 const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "TikTok", href: "#" },
   { name: "LinkedIn", href: "#" },
 ];
 
@@ -116,11 +116,11 @@ export function FooterSection() {
             <div className="col-span-2">
               <a href="#" className="inline-flex items-center gap-2 mb-6">
                 <span className="text-2xl font-display text-white">SAPLE</span>
-                <span className="text-xs text-white/40 font-mono">.ai</span>
+                <span className="text-xs text-white/40 font-mono"></span>
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Enterprise-ready customer service automation. Deploy empathetic AI agents across every channel.
+                Social-Media-Agentur für Gastronomie in Berlin. Reels, Strategie, Wachstum — alles aus einer Hand.
               </p>
 
               {/* Social Links */}
@@ -167,13 +167,13 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2025 Saple. All rights reserved.
+            &copy; 2025 Saple — ein Produkt der Bethesna Verwaltung GmbH
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
-              All systems operational
+              Content läuft
             </span>
           </div>
         </div>

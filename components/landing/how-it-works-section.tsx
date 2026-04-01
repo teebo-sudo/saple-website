@@ -5,39 +5,39 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Build",
-    subtitle: "your agent",
-    description: "Configure your AI agent with your knowledge base, brand voice, and workflows. Connect your CRM, helpdesk, and channels.",
-    code: `const agent = new SapleAgent({
-  role: 'Customer Support',
-  channels: ['chat', 'voice', 'whatsapp'],
-  languages: 135,
-  tone: 'empathetic'
+    title: "Analyse",
+    subtitle: "& Strategie",
+    description: "Wir analysieren Ihre Präsenz, Ihre Zielgruppe und Ihre Mitbewerber. Daraus entsteht eine maßgeschneiderte Content-Strategie.",
+    code: `saple.analyze({
+  client: 'Restaurant Berlin',
+  platforms: ['instagram', 'tiktok'],
+  competitors: 5,
+  audit: 'full'
 })`,
   },
   {
     number: "02",
-    title: "Deploy",
-    subtitle: "across channels",
-    description: "Go live across 35+ channels instantly. Your agent handles queries, pulls data, books meetings, and resolves issues in real-time.",
-    code: `await agent.deploy({
-  channels: ['website', 'whatsapp', 'email'],
-  handoff: 'human-agent',
-  escalation: 'auto',
-  sla: '< 30s'
+    title: "Produktion",
+    subtitle: "& Kreation",
+    description: "Professionelle Drehtage vor Ort. Wir produzieren Reels, Stories und Fotos, die Ihre Gerichte und Atmosphäre in Szene setzen.",
+    code: `saple.produce({
+  format: ['reels', 'stories', 'fotos'],
+  location: 'vor-ort',
+  scripts: 'professional',
+  output: '15-20 pieces/month'
 })`,
   },
   {
     number: "03",
-    title: "Optimize",
-    subtitle: "& improve",
-    description: "Track resolution rates, customer satisfaction, and agent accuracy. Continuously train and refine with every interaction.",
-    code: `saple.analytics({
-  agents: [agent],
-  metrics: ['csat', 'resolution', 'escalation'],
-  alerts: true
+    title: "Wachstum",
+    subtitle: "& Ergebnisse",
+    description: "Ihr Content geht live, die Reichweite wächst, neue Gäste kommen. Wir optimieren fortlaufend auf Basis echter Zahlen.",
+    code: `saple.report({
+  metrics: ['views', 'reach', 'bookings'],
+  frequency: 'weekly',
+  optimization: true
 })
-// 90% automated resolution today`,
+// +340% Reichweite in 90 Tagen`,
   },
 ];
 
@@ -81,16 +81,16 @@ export function HowItWorksSection() {
             <div className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"}`}>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-8">
                 <span className="w-12 h-px bg-white/20" />
-                Process
+                Prozess
               </span>
             </div>
             
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.85] transition-all duration-1000 delay-100 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}>
-              <span className="block">Build.</span>
-              <span className="block text-white/30">Deploy.</span>
-              <span className="block text-white/10">Optimize.</span>
+              <span className="block">Analyse.</span>
+              <span className="block text-white/30">Produktion.</span>
+              <span className="block text-white/10">Wachstum.</span>
             </h2>
           </div>
 

@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Saple - Enterprise AI Agents for Customer Service Automation',
-  description: 'Deploy empathetic multimodal AI agents that automate 90% of customer queries across 35+ channels in 135+ languages.',
+  title: 'Saple — Social Media Agentur für Gastronomie in Berlin | Content-Produktion & Strategie',
+  description: 'Saple ist deine Social-Media-Agentur in Berlin. Reels, Strategie, Wachstum — alles aus einer Hand. Sichtbarkeit, die bleibt.',
   generator: 'v0.app',
 }
 

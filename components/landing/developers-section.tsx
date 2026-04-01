@@ -4,20 +4,20 @@ import { useState, useEffect, useRef } from "react";
 
 const features = [
   {
-    title: "REST & WebSocket APIs",
-    description: "Full API access for custom integrations and workflows."
+    title: "Professionelle Skripte",
+    description: "Jedes Reel wird vorab geskriptet — für maximale Wirkung und klare Botschaften."
   },
   {
-    title: "Real-time events",
-    description: "Stream conversations and agent actions as they happen."
+    title: "Strukturierte Drehtage",
+    description: "Wir kommen zu Ihnen und produzieren einen ganzen Monat Content an einem Tag."
   },
   {
-    title: "Custom training",
-    description: "Train agents on your knowledge base, FAQs, and brand voice."
+    title: "Datenbasierte Optimierung",
+    description: "Jeder Post wird analysiert. Was funktioniert, wird skaliert."
   },
   {
-    title: "Webhook support",
-    description: "Trigger actions in your systems based on conversation events."
+    title: "Trend-Radar",
+    description: "Wir erkennen Trends bevor sie viral gehen und setzen sie für Sie um."
   },
 ];
 
@@ -68,12 +68,12 @@ export function DevelopersSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Developer Platform
+            So arbeiten wir
           </span>
           <h2 className="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">
-            Build custom
+            Content mit
             <br />
-            <span className="text-muted-foreground">experiences.</span>
+            <span className="text-muted-foreground">System.</span>
           </h2>
         </div>
 
@@ -84,8 +84,8 @@ export function DevelopersSection() {
           }`}
         >
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-md">
-            A powerful developer platform for building custom support experiences.
-            Extend Saple with APIs, webhooks, and custom integrations.
+            Kein Rätselraten, keine leeren Versprechen. Unser Prozess ist
+            strukturiert, transparent und auf Ergebnisse ausgerichtet.
           </p>
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => (

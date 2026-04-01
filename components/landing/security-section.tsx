@@ -6,31 +6,31 @@ import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 const securityFeatures = [
   {
     icon: Shield,
-    title: "Enterprise-grade security",
-    description: "End-to-end encryption for all customer data.",
+    title: "Speed",
+    description: "Schnell handeln, schnell lernen, schnell wachsen. Wir warten nicht auf Perfektion — wir liefern.",
     image: "/images/isolated.jpg",
   },
   {
     icon: Lock,
-    title: "Data privacy",
-    description: "Customer data encrypted at rest and in transit.",
+    title: "Data",
+    description: "Bauchgefühl ist gut, Daten sind besser. Jede Entscheidung wird durch Zahlen gestützt.",
     image: "/images/encrypted.jpg",
   },
   {
     icon: Eye,
-    title: "Full audit trails",
-    description: "Every conversation logged and inspectable.",
+    title: "Impact",
+    description: "Kein Content ohne Wirkung. Alles was wir tun, hat ein messbares Ziel.",
     image: "/images/audit.jpg",
   },
   {
     icon: FileCheck,
-    title: "Compliance ready",
-    description: "SOC 2, HIPAA, and GDPR compliant by design.",
+    title: "Full-Service",
+    description: "Von der Strategie über den Dreh bis zum Posting — alles aus einer Hand.",
     image: "/images/permissions.jpg",
   },
 ];
 
-const certifications = ["SOC 2", "ISO 27001", "HIPAA", "GDPR"];
+const certifications = ["Instagram", "TikTok", "Reels", "Content"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -67,16 +67,16 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Security
+            Unsere Werte
           </span>
           
           {/* Title — full width */}
           <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-            Automated,
+            Jung. Hungrig.
             <br />
-            <span className="text-muted-foreground">not unsecured.</span>
+            <span className="text-muted-foreground">Datengetrieben.</span>
           </h2>
           
           {/* Description — below title */}
@@ -84,7 +84,7 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Your customer data is sacred. Enterprise-grade security ensures every conversation is protected and compliant.
+              Wir sind keine klassische Agentur. Wir sind ein Team aus Kreativen und Strategen, das Ergebnisse liefert — keine leeren Versprechen.
             </p>
           </div>
         </div>
@@ -109,10 +109,10 @@ export function SecuritySection() {
             </div>
             
             <div className="relative z-10">
-              <span className="font-mono text-sm text-muted-foreground">Active protection</span>
+              <span className="font-mono text-sm text-muted-foreground">Unser Versprechen</span>
               <div className="mt-8">
-                <span className="text-7xl lg:text-8xl font-display">0</span>
-                <span className="block text-muted-foreground mt-2">Data breaches since launch</span>
+                <span className="text-7xl lg:text-8xl font-display">100%</span>
+                <span className="block text-muted-foreground mt-2">Kundenzufriedenheit seit Tag 1</span>
               </div>
             </div>
             

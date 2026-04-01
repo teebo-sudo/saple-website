@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const regions = [
-  { name: "Chat & Messaging", nodes: 12, status: "operational" },
-  { name: "Voice & Telephony", nodes: 8, status: "operational" },
-  { name: "Email & Ticketing", nodes: 6, status: "operational" },
-  { name: "Social & WhatsApp", nodes: 9, status: "operational" },
+  { name: "Instagram Reels", nodes: "Kurzvideos", status: "operational" },
+  { name: "TikTok Content", nodes: "Viral Clips", status: "operational" },
+  { name: "Food-Fotografie", nodes: "Bildwelten", status: "operational" },
+  { name: "Story Content", nodes: "Daily Posts", status: "operational" },
 ];
 
 export function InfrastructureSection() {
@@ -44,7 +44,7 @@ export function InfrastructureSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Omnichannel coverage
+            Reichweite & Formate
           </span>
           
           <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-16 items-stretch">
@@ -64,16 +64,16 @@ export function InfrastructureSection() {
               <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}>
-                Every channel,
+                Jede Plattform,
                 <br />
-                <span className="text-muted-foreground">covered.</span>
+                <span className="text-muted-foreground">bespielt.</span>
               </h2>
 
               <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}>
-                Your AI agents operate across 35+ channels in 135+ languages.
-                Customers get instant support wherever they are.
+                Von Reels über TikToks bis hin zu professioneller Food-Fotografie.
+                Content, der auf jeder Plattform funktioniert.
               </p>
             </div>
           </div>
@@ -144,11 +144,11 @@ export function InfrastructureSection() {
             
             <div className="relative z-10">
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-8xl lg:text-[10rem] font-display leading-none">35+</span>
-                <span className="text-2xl text-muted-foreground">channels</span>
+                <span className="text-8xl lg:text-[10rem] font-display leading-none">10M+</span>
+                <span className="text-2xl text-muted-foreground">Views</span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Support channels connected for seamless customer experiences across every touchpoint.
+                Gesamte Reichweite unserer Partner auf Instagram und TikTok — und es werden täglich mehr.
               </p>
             </div>
           </div>
@@ -158,15 +158,15 @@ export function InfrastructureSection() {
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-100 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">135+</span>
-              <span className="block text-sm text-muted-foreground mt-2">Languages</span>
+              <span className="text-5xl lg:text-6xl font-display">10+</span>
+              <span className="block text-sm text-muted-foreground mt-2">Aktive Partner</span>
             </div>
             
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">50+</span>
-              <span className="block text-sm text-muted-foreground mt-2">Countries served</span>
+              <span className="text-5xl lg:text-6xl font-display">Berlin</span>
+              <span className="block text-sm text-muted-foreground mt-2">Standort & Fokus</span>
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@ export function InfrastructureSection() {
                 </span>
               </div>
               <span className="font-medium block mb-1">{region.name}</span>
-              <span className="text-sm text-muted-foreground">{region.nodes} integrations</span>
+              <span className="text-sm text-muted-foreground">{region.nodes}</span>
             </div>
           ))}
         </div>

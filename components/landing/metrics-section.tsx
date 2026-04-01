@@ -4,25 +4,25 @@ import { useEffect, useState, useRef } from "react";
 
 const metrics = [
   {
-    value: 1847392,
+    value: 10247000,
     suffix: "",
     prefix: "",
-    label: "Conversations handled today",
-    sublabel: "across 1,300+ enterprises",
+    label: "Views generiert",
+    sublabel: "über alle Partner hinweg",
   },
   {
-    value: 99,
-    suffix: ".9%",
-    prefix: "",
-    label: "Accuracy",
-    sublabel: "query resolution",
-  },
-  {
-    value: 60,
+    value: 100,
     suffix: "%",
     prefix: "",
-    label: "Cost reduction",
-    sublabel: "avg. for customers",
+    label: "Kundenzufriedenheit",
+    sublabel: "kein Kunde verloren",
+  },
+  {
+    value: 3,
+    suffix: "x",
+    prefix: "",
+    label: "Mehr Anfragen",
+    sublabel: "im Schnitt pro Partner",
   },
 ];
 
@@ -259,9 +259,9 @@ export function MetricsSection() {
             <h2 className={`text-6xl md:text-7xl lg:text-[140px] font-display tracking-tight leading-[0.95] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Real-time
+              Echte Zahlen,
               <br />
-              <span className="text-muted-foreground">service metrics.</span>
+              <span className="text-muted-foreground">echte Ergebnisse.</span>
             </h2>
           </div>
         </div>
@@ -328,11 +328,11 @@ export function MetricsSection() {
         <div className={`mt-16 pt-8 border-t border-foreground/10 flex flex-wrap items-center gap-x-12 gap-y-4 text-sm font-mono text-muted-foreground transition-all duration-1000 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          <span>Chat</span>
-          <span>Voice</span>
-          <span>Email</span>
-          <span>WhatsApp</span>
-          <span className="text-foreground">+31 more channels</span>
+          <span>Instagram Reels</span>
+          <span>TikTok</span>
+          <span>Instagram Stories</span>
+          <span>Food-Fotografie</span>
+          <span className="text-foreground">Full-Service Produktion</span>
         </div>
       </div>
     </section>

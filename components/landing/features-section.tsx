@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Multimodal AI Agents",
-    description: "Deploy empathetic AI agents across chat, voice, email, and WhatsApp. They understand context, resolve queries, and escalate when needed.",
-    stats: { value: "90%", label: "queries automated" },
+    title: "Analyse & Potenzial-Check",
+    description: "Wir analysieren Ihre Social-Media-Präsenz und finden ungenutzte Hebel für mehr Sichtbarkeit und Neukunden.",
+    stats: { value: "100%", label: "datengestützt" },
   },
   {
     number: "02",
-    title: "Agent Assist",
-    description: "Real-time AI copilot for human agents. Instant response suggestions, knowledge retrieval, and automated post-call summaries.",
-    stats: { value: "50%", label: "productivity boost" },
+    title: "Strategie & Positionierung",
+    description: "Eine klare Content-Strategie, die Ihr Unternehmen online positioniert und von der Konkurrenz abhebt.",
+    stats: { value: "3x", label: "mehr Anfragen" },
   },
   {
     number: "03",
-    title: "Conversation Intelligence",
-    description: "Surface insights from every customer interaction. Track trends, detect sentiment, and identify improvement opportunities automatically.",
-    stats: { value: "135+", label: "languages" },
+    title: "Reels & Content-Produktion",
+    description: "Professionelle Skripte, strukturierte Drehtage und Reels die performen — alles aus einer Hand.",
+    stats: { value: "10M+", label: "Views generiert" },
   },
   {
     number: "04",
-    title: "Seamless Handoff",
-    description: "For edge cases or sensitive topics, conversations hand off to human agents with full context. No customer repeats themselves.",
-    stats: { value: "0", label: "context lost" },
+    title: "Mehr Gäste, planbar",
+    description: "Social Media wird zum planbaren Neukundenkanal — mit konstanter Sichtbarkeit und echten Reservierungen.",
+    stats: { value: "10+", label: "aktive Partner" },
   },
 ];
 
@@ -158,23 +158,23 @@ export function FeaturesSection() {
             <div className="lg:col-span-7">
               <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
                 <span className="w-12 h-px bg-foreground/30" />
-                Solutions
+                Leistungen
               </span>
               <h2
                 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Intelligent
+                Content, der
                 <br />
-                <span className="text-muted-foreground">service.</span>
+                <span className="text-muted-foreground">performt.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Deploy AI agents that automate customer service across 35+ channels. Reduce costs by 60% while delighting customers 24/7.
+                So bringen wir Ihr Gastro-Business nach vorne. Von der Analyse bis zum fertigen Reel — strategisch, kreativ, messbar.
               </p>
             </div>
           </div>

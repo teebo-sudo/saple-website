@@ -66,18 +66,18 @@ const logos: Record<string, React.ReactNode> = {
 };
 
 const integrations = [
-  { name: "Salesforce", category: "CRM" },
-  { name: "HubSpot", category: "CRM" },
-  { name: "Slack", category: "Comms" },
-  { name: "Jira", category: "Tickets" },
-  { name: "Stripe", category: "Payments" },
-  { name: "AWS S3", category: "Storage" },
-  { name: "Google Drive", category: "Docs" },
-  { name: "Zapier", category: "Auto" },
-  { name: "Snowflake", category: "Data" },
-  { name: "GitHub", category: "Code" },
-  { name: "OpenAI", category: "AI" },
-  { name: "Anthropic", category: "AI" },
+  { name: "Sushi", category: "Japanese" },
+  { name: "Burger", category: "Street Food" },
+  { name: "Pasta", category: "Italian" },
+  { name: "Steak", category: "Grill" },
+  { name: "Patisserie", category: "Dessert" },
+  { name: "Ramen", category: "Asian" },
+  { name: "Poke Bowl", category: "Healthy" },
+  { name: "Döner", category: "Kebab" },
+  { name: "Seafood", category: "Fisch" },
+  { name: "Brunch", category: "Café" },
+  { name: "Fine Dining", category: "Premium" },
+  { name: "Bar & Drinks", category: "Cocktails" },
 ];
 
 export function IntegrationsSection() {
@@ -107,22 +107,22 @@ export function IntegrationsSection() {
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
           <span className="w-12 h-px bg-foreground/20" />
-          Integrations
+          Gastro-Expertise
           <span className="w-12 h-px bg-foreground/20" />
         </span>
 
         <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}>
-          Connect
+          Jede Küche,
           <br />
-          <span className="text-muted-foreground">your stack.</span>
+          <span className="text-muted-foreground">in Szene gesetzt.</span>
         </h2>
 
         <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto transition-all duration-1000 delay-100 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          100+ native integrations with your CRM, helpdesk, e-commerce, and communication platforms. Connected in minutes.
+          Ob Sushi-Bar, Burger-Laden oder Fine Dining — wir wissen, wie Ihr Essen auf dem Bildschirm aussehen muss, damit Gäste kommen.
         </p>
       </div>
 
@@ -210,9 +210,9 @@ export function IntegrationsSection() {
         }`}>
           <div className="flex flex-wrap gap-12">
             {[
-              { value: "100+", label: "Integrations" },
-              { value: "OAuth", label: "Auth built-in" },
-              { value: "Webhooks", label: "Real-time sync" },
+              { value: "10+", label: "Gastro-Partner" },
+              { value: "Berlin", label: "Vor-Ort Produktion" },
+              { value: "Full-Service", label: "Alles aus einer Hand" },
             ].map((stat) => (
               <div key={stat.label} className="flex items-baseline gap-3">
                 <span className="text-3xl font-display">{stat.value}</span>
@@ -222,7 +222,7 @@ export function IntegrationsSection() {
           </div>
 
           <a href="#" className="group inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground transition-colors">
-            View all integrations
+            Alle Referenzen ansehen
             <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
           </a>
         </div>
