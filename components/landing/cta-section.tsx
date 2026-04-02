@@ -83,12 +83,12 @@ export function CtaSection() {
                 </p>
               </div>
 
-              {/* Right image — exact original template layout */}
-              <div className="hidden lg:flex items-end justify-center w-[600px] h-[650px] -mr-16">
+              {/* Right image — fully visible, no clipping */}
+              <div className="hidden lg:flex items-end justify-center w-[550px] h-[600px] shrink-0 overflow-visible">
                 <img
                   src="/images/bridge.png"
                   alt="Leuchtende Verbindung zwischen zwei Bäumen"
-                  className="w-full h-full object-contain object-bottom"
+                  className="w-full h-auto max-h-full object-contain object-bottom"
                 />
               </div>
             </div>
