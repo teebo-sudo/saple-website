@@ -95,16 +95,16 @@ export function FooterSection() {
   return (
     <footer className="relative bg-black">
       {/* Panoramic banner image */}
-      <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden">
+      <div className="relative w-full h-[400px] md:h-[520px] lg:h-[600px] overflow-hidden">
         <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png"
           alt="Biolumineszente Landschaft"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-bottom"
         />
-        {/* Gradient fade to black at bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
+        {/* Smooth gradient fade to black at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-40% via-black/40 via-70% to-black" />
         {/* Subtle dark vignette on sides */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
       </div>
 
       {/* Footer content — black background, white text */}

@@ -84,7 +84,7 @@ export function CtaSection() {
               </div>
 
               {/* Right image */}
-              <div className="hidden lg:flex items-end justify-center w-[600px] h-[650px] -mr-16">
+              <div className="hidden lg:flex items-end justify-center w-[500px] h-[600px] shrink-0">
                 <img
                   src="/images/bridge.png"
                   alt="Leuchtende Verbindung zwischen zwei Bäumen"
