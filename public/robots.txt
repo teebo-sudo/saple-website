@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saple-website.netlify.app/sitemap.xml

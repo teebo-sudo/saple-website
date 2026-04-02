@@ -23,8 +23,8 @@ const footerLinks = {
     { name: "Erstgespräch", href: "#" },
   ],
   Rechtliches: [
-    { name: "Datenschutz", href: "#" },
-    { name: "Impressum", href: "#" },
+    { name: "Datenschutz", href: "/datenschutz" },
+    { name: "Impressum", href: "/impressum" },
     { name: "AGB", href: "#" },
   ],
 };
@@ -167,7 +167,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2025 Saple — ein Produkt der Bethesna Verwaltung GmbH
+            &copy; 2026 Saple — ein Produkt der Bethesna Verwaltung GmbH
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
