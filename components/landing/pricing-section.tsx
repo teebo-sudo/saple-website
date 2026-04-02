@@ -54,7 +54,6 @@ const plans = [
 ];
 
 export function PricingSection() {
-  const [isAnnual, setIsAnnual] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -96,7 +95,7 @@ export function PricingSection() {
             }`}>
               <img
                 src="/images/whale.png"
-                alt="Organic whale"
+                alt="Organische Wal-Illustration"
                 className="w-full h-full object-contain object-center"
               />
             </div>
@@ -122,7 +121,7 @@ export function PricingSection() {
                   <div className="absolute -top-4 left-8 right-8 flex justify-center">
                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-foreground text-background text-xs font-mono uppercase tracking-widest">
                       <Zap className="w-3 h-3" />
-                      Most Popular
+                      Beliebtestes Paket
                     </span>
                   </div>
                 )}
@@ -139,21 +138,7 @@ export function PricingSection() {
 
                   {/* Price */}
                   <div className="mb-8">
-                    {plan.price.monthly !== null ? (
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-5xl lg:text-6xl font-display">
-                          ${isAnnual ? plan.price.annual : plan.price.monthly}
-                        </span>
-                        <span className="text-muted-foreground text-sm">/month</span>
-                      </div>
-                    ) : (
-                      <span className="text-4xl font-display">Auf Anfrage</span>
-                    )}
-                    {plan.price.monthly !== null && plan.price.monthly > 0 && (
-                      <p className="text-xs text-muted-foreground mt-2 font-mono">
-                        {isAnnual ? "billed annually" : "billed monthly"}
-                      </p>
-                    )}
+                    <span className="text-4xl font-display">Auf Anfrage</span>
                   </div>
 
                   {/* Features */}

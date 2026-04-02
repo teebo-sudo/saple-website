@@ -8,8 +8,8 @@ const navLinks = [
   { name: "Leistungen",   href: "#features"      },
   { name: "Prozess",      href: "#how-it-works"  },
   { name: "Reichweite",   href: "#infra"          },
-  { name: "Referenzen",   href: "#integrations"  },
-  { name: "Team",         href: "#security"      },
+  { name: "Pakete",       href: "#pricing"        },
+  { name: "Über uns",     href: "#about"          },
 ];
 
 export function Navigation() {
