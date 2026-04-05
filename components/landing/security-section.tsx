@@ -6,31 +6,31 @@ import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 const securityFeatures = [
   {
     icon: Shield,
-    title: "Speed",
-    description: "Schnell handeln, schnell lernen, schnell wachsen. Wir warten nicht auf Perfektion — wir liefern.",
+    title: "Ergebnisse, die zählen",
+    description: "Uns interessieren keine Likes. Uns interessiert, ob dein Telefon klingelt.",
     image: "/images/isolated.jpg",
   },
   {
     icon: Lock,
-    title: "Data",
-    description: "Bauchgefühl ist gut, Daten sind besser. Jede Entscheidung wird durch Zahlen gestützt.",
+    title: "Alles aus einem Studio",
+    description: "Strategie, Produktion, Ads. Kein Ping-Pong zwischen drei Dienstleistern.",
     image: "/images/encrypted.jpg",
   },
   {
     icon: Eye,
-    title: "Impact",
-    description: "Kein Content ohne Wirkung. Alles was wir tun, hat ein messbares Ziel.",
+    title: "Transparente Zahlen",
+    description: "Du siehst jeden Monat, was dein Investment bringt. Keine Blackbox.",
     image: "/images/audit.jpg",
   },
   {
     icon: FileCheck,
-    title: "Full-Service",
-    description: "Von der Strategie über den Dreh bis zum Posting — alles aus einer Hand.",
+    title: "Schnell am Start",
+    description: "Erste Creatives in unter 14 Tagen. Kein Onboarding, das Monate dauert.",
     image: "/images/permissions.jpg",
   },
 ];
 
-const certifications = ["Instagram", "TikTok", "Reels", "Content"];
+const certifications = ["Content", "Ads", "Strategie", "Performance"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -67,16 +67,16 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Unsere Werte
+            Warum Saple
           </span>
           
           {/* Title — full width */}
-          <h2 className={`text-6xl md:text-7xl lg:text-[80px] xl:text-[96px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
+          <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-            Jung. Hungrig.
+            Ergebnisse statt
             <br />
-            <span className="text-muted-foreground">Datengetrieben.</span>
+            <span className="text-muted-foreground">Eitelkeitsmetriken.</span>
           </h2>
           
           {/* Description — below title */}
@@ -84,7 +84,7 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Wir sind keine klassische Agentur. Wir sind ein Team aus Kreativen und Strategen, das Ergebnisse liefert — keine leeren Versprechen.
+              Uns interessieren keine Likes. Uns interessiert, ob dein Telefon klingelt. Vier Gründe, warum Teams mit uns arbeiten.
             </p>
           </div>
         </div>
@@ -111,8 +111,8 @@ export function SecuritySection() {
             <div className="relative z-10">
               <span className="font-mono text-sm text-muted-foreground">Unser Versprechen</span>
               <div className="mt-8">
-                <span className="text-7xl lg:text-8xl font-display">100%</span>
-                <span className="block text-muted-foreground mt-2">Kundenzufriedenheit seit Tag 1</span>
+                <span className="text-7xl lg:text-8xl font-display">14</span>
+                <span className="block text-muted-foreground mt-2">Tage bis zum ersten Creative</span>
               </div>
             </div>
             

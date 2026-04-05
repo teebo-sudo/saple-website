@@ -4,35 +4,26 @@ import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const footerLinks = {
-  Leistungen: [
+  Studio: [
     { name: "Content-Produktion", href: "#features" },
-    { name: "Strategie", href: "#features" },
-    { name: "Pakete", href: "#pricing" },
-    { name: "Referenzen", href: "#integrations" },
-  ],
-  Unternehmen: [
+    { name: "Arbeiten", href: "#showreel" },
+    { name: "Prozess", href: "#how-it-works" },
     { name: "Über uns", href: "#about" },
-    { name: "Team", href: "#about" },
-    { name: "Karriere", href: "#", badge: "Hiring" },
-    { name: "Kontakt", href: "#" },
   ],
-  Ressourcen: [
-    { name: "Blog", href: "#" },
-    { name: "Portfolio", href: "#integrations" },
-    { name: "FAQ", href: "#" },
-    { name: "Erstgespräch", href: "#" },
+  Kontakt: [
+    { name: "E-Mail", href: "mailto:hello@saple.de" },
+    { name: "Instagram", href: "#" },
+    { name: "TikTok", href: "#" },
   ],
   Rechtliches: [
     { name: "Datenschutz", href: "/datenschutz" },
     { name: "Impressum", href: "/impressum" },
-    { name: "AGB", href: "#" },
   ],
 };
 
 const socialLinks = [
   { name: "Instagram", href: "#" },
   { name: "TikTok", href: "#" },
-  { name: "LinkedIn", href: "#" },
 ];
 
 function AnimatedWaveCanvas() {
@@ -94,11 +85,11 @@ function AnimatedWaveCanvas() {
 export function FooterSection() {
   return (
     <footer className="relative bg-black">
-      {/* Panoramic banner image — exact original template layout */}
+      {/* Panoramic banner image */}
       <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden">
         <img
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Upscaled%20Image%20%2810%29-UnDKstODkIENp5xqTYUEpt0Sm8tNOw.png"
-          alt="Biolumineszente Landschaft"
+          alt="Bioluminescent landscape"
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient fade to black at bottom */}
@@ -120,7 +111,7 @@ export function FooterSection() {
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Social-Media-Agentur für Gastronomie in Berlin. Reels, Strategie, Wachstum — alles aus einer Hand.
+                Creative Performance Studio aus Berlin. Content & Ads, die Kunden bringen.
               </p>
 
               {/* Social Links */}
@@ -167,13 +158,13 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2026 Saple — ein Produkt der Bethesna Verwaltung GmbH
+            &copy; 2026 Saple — Bethesna Verwaltung GmbH
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
-              Content läuft
+              10M+ Views • Berlin
             </span>
           </div>
         </div>

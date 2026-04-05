@@ -5,32 +5,18 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Seit Saple unseren Content macht, sind unsere Reservierungen um das Dreifache gestiegen. Die Reels sind einfach auf einem anderen Level.",
+    quote: "Seit wir mit Saple arbeiten, bekommen wir jede Woche Anfragen über Instagram. Vorher? Vielleicht eine im Monat. Die Jungs wissen, was sie tun.",
     author: "Marco K.",
     role: "Inhaber",
     company: "Osteria Bella",
-    metric: { value: "3x", label: "Mehr Reservierungen" },
+    metric: { value: "3x", label: "mehr Reservierungen" },
   },
   {
-    quote: "Endlich muss ich mich nicht mehr selbst um Social Media kümmern. Saple kommt, dreht und liefert — ich kann mich auf meine Küche konzentrieren.",
+    quote: "Ich hatte vorher eine Agentur — hübsche Posts, aber null Ergebnis. Saple hat einen Plan gemacht und in 4 Wochen kamen die ersten Anfragen. Komplett anderer Ansatz.",
     author: "Lisa M.",
-    role: "Geschäftsführerin",
+    role: "Gründerin",
     company: "Café Morgenrot",
-    metric: { value: "0", label: "Zeitaufwand für mich" },
-  },
-  {
-    quote: "Unsere TikToks haben über 500.000 Views erreicht. Gäste kommen jetzt aus ganz Berlin, weil sie uns online entdeckt haben.",
-    author: "Kenji T.",
-    role: "Inhaber",
-    company: "Ramen House",
-    metric: { value: "500K+", label: "TikTok Views" },
-  },
-  {
-    quote: "Professionell, schnell und kreativ. Saple versteht die Gastronomie und weiß, wie man Essen so in Szene setzt, dass man sofort Hunger bekommt.",
-    author: "Anna S.",
-    role: "Marketing Managerin",
-    company: "Steak & Co.",
-    metric: { value: "100%", label: "Zufriedenheit" },
+    metric: { value: "12", label: "Anfragen/Monat" },
   },
 ];
 
@@ -94,13 +80,13 @@ export function TestimonialsSection() {
           <div>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-background/40 mb-4">
               <span className="w-12 h-px bg-background/20" />
-              Kundenstimmen
+              Ergebnisse
             </span>
             <h2 className={`text-4xl lg:text-5xl font-display transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}>
-              Das sagen unsere
-              <span className="text-background/40"> Partner.</span>
+              Echte Ergebnisse,
+              <span className="text-background/40"> echte Partner.</span>
             </h2>
           </div>
           

@@ -8,21 +8,21 @@ const metrics = [
     suffix: "",
     prefix: "",
     label: "Views generiert",
-    sublabel: "über alle Partner hinweg",
+    sublabel: "organisch & bezahlt",
   },
   {
-    value: 100,
-    suffix: "%",
+    value: 200,
+    suffix: "+",
     prefix: "",
-    label: "Kundenzufriedenheit",
-    sublabel: "kein Kunde verloren",
+    label: "Creatives produziert",
+    sublabel: "Reels, Ads & mehr",
   },
   {
     value: 3,
     suffix: "x",
     prefix: "",
-    label: "Mehr Anfragen",
-    sublabel: "im Schnitt pro Partner",
+    label: "mehr Anfragen",
+    sublabel: "im Durchschnitt",
   },
 ];
 
@@ -259,7 +259,7 @@ export function MetricsSection() {
             <h2 className={`text-6xl md:text-7xl lg:text-[140px] font-display tracking-tight leading-[0.95] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Echte Zahlen,
+              Zahlen, die
               <br />
               <span className="text-muted-foreground">echte Ergebnisse.</span>
             </h2>
@@ -328,11 +328,14 @@ export function MetricsSection() {
         <div className={`mt-16 pt-8 border-t border-foreground/10 flex flex-wrap items-center gap-x-12 gap-y-4 text-sm font-mono text-muted-foreground transition-all duration-1000 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          <span>Instagram Reels</span>
+          <span>Reels</span>
+          <span>Video Ads</span>
+          <span>Social Content</span>
           <span>TikTok</span>
-          <span>Instagram Stories</span>
-          <span>Food-Fotografie</span>
-          <span className="text-foreground">Full-Service Produktion</span>
+          <span>Instagram</span>
+          <span>Motion Design</span>
+          <span>Food Content</span>
+          <span className="text-foreground">Performance Ads</span>
         </div>
       </div>
     </section>

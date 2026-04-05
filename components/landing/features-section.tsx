@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Analyse & Potenzial-Check",
-    description: "Wir analysieren Ihre Social-Media-Präsenz und finden ungenutzte Hebel für mehr Sichtbarkeit und Neukunden.",
-    stats: { value: "100%", label: "datengestützt" },
+    title: "Analyse & Strategie",
+    description: "Wir analysieren deinen Markt, deine Zielgruppe und deinen Wettbewerb. Daraus entsteht ein Content- und Ad-Plan, der auf Daten basiert.",
+    stats: { value: "100%", label: "datenbasiert" },
   },
   {
     number: "02",
-    title: "Strategie & Positionierung",
-    description: "Eine klare Content-Strategie, die Ihr Unternehmen online positioniert und von der Konkurrenz abhebt.",
-    stats: { value: "3x", label: "mehr Anfragen" },
+    title: "Creative Production",
+    description: "Professionelle Reels, Video Ads und Social Content. Skript, Dreh, Schnitt, Motion Design — alles aus einem Studio.",
+    stats: { value: "200+", label: "Creatives produziert" },
   },
   {
     number: "03",
-    title: "Reels & Content-Produktion",
-    description: "Professionelle Skripte, strukturierte Drehtage und Reels die performen — alles aus einer Hand.",
-    stats: { value: "10M+", label: "Views generiert" },
+    title: "Ad Setup & Launch",
+    description: "Wir setzen deine Kampagnen auf, wählen die richtige Zielgruppe und testen verschiedene Varianten — damit dein Budget nicht verbrennt.",
+    stats: { value: "3x", label: "mehr Anfragen" },
   },
   {
     number: "04",
-    title: "Mehr Gäste, planbar",
-    description: "Social Media wird zum planbaren Neukundenkanal — mit konstanter Sichtbarkeit und echten Reservierungen.",
-    stats: { value: "10+", label: "aktive Partner" },
+    title: "Optimierung & Scale",
+    description: "Was funktioniert, skalieren wir. Was nicht performt, wird iteriert. Du bekommst monatliche Reports mit echten Zahlen.",
+    stats: { value: "10M+", label: "Views generiert" },
   },
 ];
 
@@ -161,7 +161,7 @@ export function FeaturesSection() {
                 Leistungen
               </span>
               <h2
-                className={`text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+                className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
@@ -174,7 +174,7 @@ export function FeaturesSection() {
               <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                So bringen wir Ihr Gastro-Business nach vorne. Von der Analyse bis zum fertigen Reel — strategisch, kreativ, messbar.
+                Wir produzieren Reels, Video Ads und Social Content — mit System. Von der Strategie bis zur Skalierung.
               </p>
             </div>
           </div>

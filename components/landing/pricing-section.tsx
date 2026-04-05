@@ -6,49 +6,47 @@ import { ArrowRight, Check, Zap } from "lucide-react";
 const plans = [
   {
     name: "Starter",
-    description: "Für den Einstieg in professionellen Content",
+    description: "Für den Einstieg",
     price: { monthly: null, annual: null },
     features: [
-      "Social-Media-Audit",
       "Content-Strategie",
-      "4 Reels / Monat",
+      "4 Reels/Monat",
       "1 Plattform",
       "Monatliches Reporting",
     ],
-    cta: "Erstgespräch buchen",
+    cta: "Erstgespräch sichern",
     highlight: false,
   },
   {
     name: "Growth",
-    description: "Für Restaurants, die wachsen wollen",
+    description: "Für messbares Wachstum",
     price: { monthly: null, annual: null },
     features: [
-      "Alles aus Starter",
-      "12 Reels / Monat",
+      "Content + Ad-Strategie",
+      "8–12 Reels/Monat",
       "Instagram & TikTok",
-      "Story-Content",
-      "Food-Fotografie",
-      "Community Management",
-      "Trend-Monitoring",
+      "Ad Setup & Management",
+      "Performance-Optimierung",
+      "Monatliches Reporting",
     ],
-    cta: "Erstgespräch buchen",
+    cta: "Erstgespräch sichern",
     highlight: true,
   },
   {
-    name: "Premium",
-    description: "Full-Service für maximale Sichtbarkeit",
+    name: "Scale",
+    description: "Für maximale Performance",
     price: { monthly: null, annual: null },
     features: [
-      "Alles aus Growth",
-      "20+ Reels / Monat",
+      "Full-Service Content & Ads",
+      "20+ Creatives/Monat",
       "Alle Plattformen",
-      "Wöchentliche Drehtage",
+      "A/B-Testing",
       "Performance Marketing",
       "Influencer-Kooperationen",
-      "Dedizierter Ansprechpartner",
-      "Priority Support",
+      "Wöchentliches Reporting",
+      "Dedicated Account Manager",
     ],
-    cta: "Erstgespräch buchen",
+    cta: "Erstgespräch sichern",
     highlight: false,
   },
 ];
@@ -77,12 +75,12 @@ export function PricingSection() {
           <div className="lg:col-span-7">
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
               <span className="w-12 h-px bg-foreground/30" />
-              Pakete
+              Zusammenarbeit
             </span>
-            <h2 className={`text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+            <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Investieren Sie in
+              Pay for
               <br />
               <span className="text-stroke">Ergebnisse.</span>
             </h2>
@@ -95,7 +93,7 @@ export function PricingSection() {
             }`}>
               <img
                 src="/images/whale.png"
-                alt="Organische Wal-Illustration"
+                alt="Organic whale"
                 className="w-full h-full object-contain object-center"
               />
             </div>
@@ -175,20 +173,17 @@ export function PricingSection() {
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Keine Mindestlaufzeit
+              Kein Vertrag über 12 Monate
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Kostenloses Erstgespräch
+              Monatlich kündbar
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              100% Kundenzufriedenheit
+              Kostenlose Erstberatung
             </span>
           </div>
-          <a href="#" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
-            Alle Leistungen vergleichen
-          </a>
         </div>
       </div>
 

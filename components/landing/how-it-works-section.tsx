@@ -5,39 +5,40 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Analyse",
-    subtitle: "& Strategie",
-    description: "Wir analysieren Ihre Präsenz, Ihre Zielgruppe und Ihre Mitbewerber. Daraus entsteht eine maßgeschneiderte Content-Strategie.",
-    code: `saple.analyze({
-  client: 'Restaurant Berlin',
-  platforms: ['instagram', 'tiktok'],
-  competitors: 5,
-  audit: 'full'
+    title: "Erstgespräch",
+    subtitle: "15 Min, kostenlos",
+    description: "Wir hören zu, stellen Fragen und sagen dir ehrlich, ob wir helfen können. Kein Pitch, kein Druck.",
+    code: `saple.call({
+  type: 'Erstgespräch',
+  duration: '15min',
+  cost: 'kostenlos',
+  result: 'Ehrliche Einschätzung'
 })`,
   },
   {
     number: "02",
-    title: "Produktion",
-    subtitle: "& Kreation",
-    description: "Professionelle Drehtage vor Ort. Wir produzieren Reels, Stories und Fotos, die Ihre Gerichte und Atmosphäre in Szene setzen.",
-    code: `saple.produce({
-  format: ['reels', 'stories', 'fotos'],
-  location: 'vor-ort',
-  scripts: 'professional',
-  output: '15-20 pieces/month'
+    title: "Strategievorschlag",
+    subtitle: "dein Plan",
+    description: "Du bekommst einen konkreten Plan: Was wir machen, was es kostet, und wann die ersten Ergebnisse kommen.",
+    code: `const plan = saple.strategy({
+  analysis: 'Markt + Wettbewerb',
+  content: 'Reels + Ads',
+  timeline: '14 Tage bis Launch',
+  budget: 'transparent'
 })`,
   },
   {
     number: "03",
-    title: "Wachstum",
+    title: "Produktion",
     subtitle: "& Ergebnisse",
-    description: "Ihr Content geht live, die Reichweite wächst, neue Gäste kommen. Wir optimieren fortlaufend auf Basis echter Zahlen.",
-    code: `saple.report({
-  metrics: ['views', 'reach', 'bookings'],
-  frequency: 'weekly',
-  optimization: true
+    description: "Innerhalb von 14 Tagen sind deine ersten Creatives live. Ab dann: monatliche Optimierung und echte Zahlen.",
+    code: `saple.produce({
+  creatives: plan.content,
+  launch: '14 Tage',
+  reporting: 'monatlich',
+  optimize: true
 })
-// +340% Reichweite in 90 Tagen`,
+// Erste Ergebnisse nach 4-6 Wochen`,
   },
 ];
 
@@ -81,16 +82,16 @@ export function HowItWorksSection() {
             <div className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"}`}>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-8">
                 <span className="w-12 h-px bg-white/20" />
-                Prozess
+                So läuft's ab
               </span>
             </div>
             
-            <h2 className={`text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.85] transition-all duration-1000 delay-100 ${
+            <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.85] transition-all duration-1000 delay-100 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}>
-              <span className="block">Analyse.</span>
-              <span className="block text-white/30">Produktion.</span>
-              <span className="block text-white/10">Wachstum.</span>
+              <span className="block">Gespräch.</span>
+              <span className="block text-white/30">Plan.</span>
+              <span className="block text-white/10">Ergebnisse.</span>
             </h2>
           </div>
 

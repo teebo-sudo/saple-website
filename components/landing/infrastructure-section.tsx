@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const regions = [
-  { name: "Instagram Reels", nodes: "Kurzvideos", status: "operational" },
-  { name: "TikTok Content", nodes: "Viral Clips", status: "operational" },
-  { name: "Food-Fotografie", nodes: "Bildwelten", status: "operational" },
-  { name: "Story Content", nodes: "Daily Posts", status: "operational" },
+  { name: "Reels & Video Ads", nodes: "Produktion", status: "operational" },
+  { name: "Social Content", nodes: "Strategie", status: "operational" },
+  { name: "Performance Ads", nodes: "Skalierung", status: "operational" },
+  { name: "Reporting", nodes: "Monatlich", status: "operational" },
 ];
 
 export function InfrastructureSection() {
@@ -44,7 +44,7 @@ export function InfrastructureSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Reichweite & Formate
+            Ergebnisse
           </span>
           
           <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-16 items-stretch">
@@ -54,26 +54,25 @@ export function InfrastructureSection() {
             }`}>
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/world-3i68QNWJwmO7W19ztZWbevAwJQHzYL.png"
-                alt="Netzwerk-Sphäre"
+                alt="Netzwerk-Visualisierung"
                 className="w-full h-full object-contain object-center"
               />
             </div>
 
             {/* Titre + description empilés */}
             <div className="flex flex-col justify-center">
-              <h2 className={`text-6xl md:text-7xl lg:text-[72px] xl:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+              <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}>
-                Jede Plattform,
+                Echte Zahlen,
                 <br />
-                <span className="text-muted-foreground">bespielt.</span>
+                <span className="text-muted-foreground">echte Wirkung.</span>
               </h2>
 
               <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}>
-                Von Reels über TikToks bis hin zu professioneller Food-Fotografie.
-                Content, der auf jeder Plattform funktioniert.
+                Keine aufgeblasenen Metriken. Das sind die tatsächlichen Ergebnisse unserer Partner.
               </p>
             </div>
           </div>
@@ -148,7 +147,7 @@ export function InfrastructureSection() {
                 <span className="text-2xl text-muted-foreground">Views</span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Gesamte Reichweite unserer Partner auf Instagram und TikTok — und es werden täglich mehr.
+                Organische und bezahlte Reichweite unserer Partner — und es werden täglich mehr.
               </p>
             </div>
           </div>
@@ -158,15 +157,15 @@ export function InfrastructureSection() {
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-100 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">10+</span>
-              <span className="block text-sm text-muted-foreground mt-2">Aktive Partner</span>
+              <span className="text-5xl lg:text-6xl font-display">200+</span>
+              <span className="block text-sm text-muted-foreground mt-2">Creatives produziert</span>
             </div>
             
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">Berlin</span>
-              <span className="block text-sm text-muted-foreground mt-2">Standort & Fokus</span>
+              <span className="text-5xl lg:text-6xl font-display">3x</span>
+              <span className="block text-sm text-muted-foreground mt-2">mehr Anfragen im Schnitt</span>
             </div>
           </div>
         </div>

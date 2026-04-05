@@ -39,26 +39,25 @@ export function CtaSection() {
           onMouseMove={handleMouseMove}
         >
           {/* Spotlight effect */}
-          <div
+          <div 
             className="absolute inset-0 opacity-10 pointer-events-none transition-opacity duration-300"
             style={{
               background: `radial-gradient(600px circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(0,0,0,0.15), transparent 40%)`
             }}
           />
-
+          
           <div className="relative z-10 px-8 lg:px-16 py-16 lg:py-24">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Left content */}
               <div className="flex-1">
                 <h2 className="text-6xl md:text-7xl lg:text-[72px] font-display tracking-tight mb-8 leading-[0.95]">
-                  Bereit für echtes
+                  Bereit für Content,
                   <br />
-                  Wachstum?
+                  der Kunden bringt?
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Lassen Sie uns in einem unverbindlichen Gespräch herausfinden,
-                  wie wir Ihr Business nach vorne bringen.
+                  Lass uns in 15 Minuten herausfinden, ob und wie wir dir helfen können. Kostenlos und unverbindlich.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -66,7 +65,7 @@ export function CtaSection() {
                     size="lg"
                     className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
                   >
-                    Erstgespräch buchen
+                    Kostenloses Erstgespräch
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                   <Button
@@ -74,21 +73,21 @@ export function CtaSection() {
                     variant="outline"
                     className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
                   >
-                    Portfolio ansehen
+                    Arbeiten ansehen
                   </Button>
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  Kostenlos & unverbindlich — kein Verkaufsdruck
+                  Kein Pitch. Kein Druck. Nur ein ehrliches Gespräch.
                 </p>
               </div>
 
-              {/* Right image — fully visible, no clipping */}
-              <div className="hidden lg:flex items-end justify-center w-[550px] h-[600px] shrink-0 overflow-visible">
+              {/* Right image */}
+              <div className="hidden lg:flex items-end justify-center w-[600px] h-[650px] -mr-16">
                 <img
                   src="/images/bridge.png"
-                  alt="Leuchtende Verbindung zwischen zwei Bäumen"
-                  className="w-full h-auto max-h-full object-contain object-bottom"
+                  alt="Leuchtende Verbindungen"
+                  className="w-full h-full object-contain object-bottom"
                 />
               </div>
             </div>

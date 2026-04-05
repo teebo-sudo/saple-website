@@ -66,18 +66,18 @@ const logos: Record<string, React.ReactNode> = {
 };
 
 const integrations = [
-  { name: "Sushi", category: "Japanese" },
-  { name: "Burger", category: "Street Food" },
-  { name: "Pasta", category: "Italian" },
-  { name: "Steak", category: "Grill" },
-  { name: "Patisserie", category: "Dessert" },
-  { name: "Ramen", category: "Asian" },
-  { name: "Poke Bowl", category: "Healthy" },
-  { name: "Döner", category: "Kebab" },
-  { name: "Seafood", category: "Fisch" },
-  { name: "Brunch", category: "Café" },
-  { name: "Fine Dining", category: "Premium" },
-  { name: "Bar & Drinks", category: "Cocktails" },
+  { name: "Gastro Reels", category: "48K Views" },
+  { name: "Coaching Ads", category: "3.2K Likes" },
+  { name: "Retail Content", category: "12K Views" },
+  { name: "Food Content", category: "85K Views" },
+  { name: "Brand Videos", category: "22K Views" },
+  { name: "Story Content", category: "15K Views" },
+  { name: "TikTok Ads", category: "67K Views" },
+  { name: "Product Shots", category: "9K Likes" },
+  { name: "Event Coverage", category: "31K Views" },
+  { name: "Motion Design", category: "18K Views" },
+  { name: "UGC Content", category: "44K Views" },
+  { name: "Social Ads", category: "56K Views" },
 ];
 
 export function IntegrationsSection() {
@@ -99,7 +99,7 @@ export function IntegrationsSection() {
   }, []);
 
   return (
-    <section id="integrations" ref={sectionRef} className="relative overflow-hidden">
+    <section id="showreel" ref={sectionRef} className="relative overflow-hidden">
 
       {/* Header — centré verticalement sur l'image */}
       <div className="relative z-10 pt-32 lg:pt-40 text-center">
@@ -107,22 +107,22 @@ export function IntegrationsSection() {
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
           <span className="w-12 h-px bg-foreground/20" />
-          Gastro-Expertise
+          Arbeiten
           <span className="w-12 h-px bg-foreground/20" />
         </span>
 
-        <h2 className={`text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+        <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}>
-          Jede Küche,
+          Was wir
           <br />
-          <span className="text-muted-foreground">in Szene gesetzt.</span>
+          <span className="text-muted-foreground">produzieren.</span>
         </h2>
 
         <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto transition-all duration-1000 delay-100 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}>
-          Ob Sushi-Bar, Burger-Laden oder Fine Dining — wir wissen, wie Ihr Essen auf dem Bildschirm aussehen muss, damit Gäste kommen.
+          Jedes Reel, jede Ad — produziert, um zu performen. Nicht um hübsch zu sein.
         </p>
       </div>
 
@@ -210,9 +210,9 @@ export function IntegrationsSection() {
         }`}>
           <div className="flex flex-wrap gap-12">
             {[
-              { value: "10+", label: "Gastro-Partner" },
+              { value: "200+", label: "Creatives produziert" },
+              { value: "10M+", label: "Views insgesamt" },
               { value: "Berlin", label: "Vor-Ort Produktion" },
-              { value: "Full-Service", label: "Alles aus einer Hand" },
             ].map((stat) => (
               <div key={stat.label} className="flex items-baseline gap-3">
                 <span className="text-3xl font-display">{stat.value}</span>
@@ -222,7 +222,7 @@ export function IntegrationsSection() {
           </div>
 
           <a href="#" className="group inline-flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-foreground transition-colors">
-            Alle Referenzen ansehen
+            Alle Arbeiten ansehen
             <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
           </a>
         </div>

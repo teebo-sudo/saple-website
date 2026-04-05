@@ -22,11 +22,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://saple-website.netlify.app'),
   title: {
-    default: 'Saple — Social Media Agentur für Gastronomie in Berlin | Content-Produktion & Strategie',
+    default: 'Saple — Creative Performance Studio | Content & Ads, die Kunden bringen',
     template: '%s — Saple',
   },
-  description: 'Saple ist Ihre Social-Media-Agentur in Berlin, spezialisiert auf Gastronomie. Reels, Strategie, Wachstum — alles aus einer Hand. Sichtbarkeit, die bleibt.',
-  keywords: ['Social Media Agentur', 'Berlin', 'Gastronomie', 'Restaurant Marketing', 'Instagram Reels', 'TikTok', 'Content-Produktion', 'Food-Fotografie', 'Social Media Marketing'],
+  description: 'Saple ist dein Creative Performance Studio in Berlin. Wir produzieren Reels, Video Ads und Social Content, der messbar neue Kunden bringt.',
+  keywords: ['Creative Performance Studio', 'Berlin', 'Reels', 'Video Ads', 'Social Content', 'Content-Produktion', 'Performance Marketing', 'Social Media Ads'],
   authors: [{ name: 'Saple — Bethesna Verwaltung GmbH' }],
   creator: 'Saple',
   publisher: 'Bethesna Verwaltung GmbH',
@@ -40,21 +40,21 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     url: 'https://saple-website.netlify.app',
     siteName: 'Saple',
-    title: 'Saple — Social Media Agentur für Gastronomie in Berlin',
-    description: 'Reels, Strategie, Wachstum — alles aus einer Hand. Die Social-Media-Agentur für Gastronomen in Berlin.',
+    title: 'Saple — Creative Performance Studio | Content & Ads, die Kunden bringen',
+    description: 'Wir produzieren Reels, Video Ads und Social Content, der nicht nur gut aussieht — sondern messbar neue Kunden bringt.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Saple — Social Media Agentur für Gastronomie in Berlin',
+        alt: 'Saple — Creative Performance Studio Berlin',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saple — Social Media Agentur für Gastronomie in Berlin',
-    description: 'Reels, Strategie, Wachstum — alles aus einer Hand. Sichtbarkeit, die bleibt.',
+    title: 'Saple — Creative Performance Studio Berlin',
+    description: 'Content & Ads, die Kunden bringen. Reels, Strategie, Wachstum — alles aus einem Studio.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -73,7 +73,6 @@ export const metadata: Metadata = {
   },
 }
 
-// JSON-LD Structured Data
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -84,7 +83,7 @@ const jsonLd = {
       legalName: 'Bethesna Verwaltung GmbH',
       url: 'https://saple-website.netlify.app',
       logo: 'https://saple-website.netlify.app/icon.svg',
-      description: 'Social-Media-Agentur für Gastronomie in Berlin. Reels, Strategie, Wachstum — alles aus einer Hand.',
+      description: 'Creative Performance Studio aus Berlin. Content & Ads, die Kunden bringen.',
       foundingDate: '2024',
       address: {
         '@type': 'PostalAddress',
@@ -108,8 +107,8 @@ const jsonLd = {
     {
       '@type': 'LocalBusiness',
       '@id': 'https://saple-website.netlify.app/#localbusiness',
-      name: 'Saple — Social Media Agentur',
-      description: 'Social-Media-Agentur spezialisiert auf Gastronomie in Berlin. Content-Produktion, Reels, TikTok, Instagram, Strategie und Wachstum.',
+      name: 'Saple — Creative Performance Studio',
+      description: 'Creative Performance Studio in Berlin. Reels, Video Ads, Social Content und Performance Marketing für Unternehmen, die messbar wachsen wollen.',
       url: 'https://saple-website.netlify.app',
       telephone: '+49-30-75425744',
       email: 'kontakt@saple.de',
@@ -131,12 +130,13 @@ const jsonLd = {
         opens: '09:00',
         closes: '18:00',
       },
-      priceRange: '€€€',
+      priceRange: '€€',
       areaServed: {
-        '@type': 'City',
-        name: 'Berlin',
+        '@type': 'GeoCircle',
+        geoMidpoint: { '@type': 'GeoCoordinates', latitude: 52.52, longitude: 13.405 },
+        geoRadius: '500000',
       },
-      serviceType: ['Social Media Marketing', 'Content-Produktion', 'Instagram Reels', 'TikTok Content', 'Food-Fotografie', 'Social Media Strategie'],
+      serviceType: ['Content-Produktion', 'Video Ads', 'Social Media Marketing', 'Performance Marketing', 'Reels Produktion', 'Creative Ads'],
       currenciesAccepted: 'EUR',
       paymentAccepted: 'Überweisung, Rechnung',
     },
@@ -145,7 +145,7 @@ const jsonLd = {
       '@id': 'https://saple-website.netlify.app/#website',
       url: 'https://saple-website.netlify.app',
       name: 'Saple',
-      description: 'Social-Media-Agentur für Gastronomie in Berlin',
+      description: 'Creative Performance Studio Berlin',
       publisher: { '@id': 'https://saple-website.netlify.app/#organization' },
       inLanguage: 'de-DE',
     },

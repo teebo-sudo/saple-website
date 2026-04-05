@@ -4,20 +4,20 @@ import { useState, useEffect, useRef } from "react";
 
 const features = [
   {
-    title: "Professionelle Skripte",
-    description: "Jedes Reel wird vorab geskriptet — für maximale Wirkung und klare Botschaften."
+    title: "Die Strategie fehlt",
+    description: "Content ohne Plan ist Zufall. Und Zufall skaliert nicht."
   },
   {
-    title: "Strukturierte Drehtage",
-    description: "Wir kommen zu Ihnen und produzieren einen ganzen Monat Content an einem Tag."
+    title: "Kein Performance-Fokus",
+    description: "Likes sind keine Kunden. Ohne Ads-Strategie bleibt Reichweite wirkungslos."
   },
   {
-    title: "Datenbasierte Optimierung",
-    description: "Jeder Post wird analysiert. Was funktioniert, wird skaliert."
+    title: "Zu viele Dienstleister",
+    description: "Agentur für Content, eine für Ads, eine für Strategie. Das Ergebnis: Chaos."
   },
   {
-    title: "Trend-Radar",
-    description: "Wir erkennen Trends bevor sie viral gehen und setzen sie für Sie um."
+    title: "Keine echten Zahlen",
+    description: "Monatsreports mit Vanity Metrics. Aber keine Antwort auf: Bringt das Kunden?"
   },
 ];
 
@@ -68,12 +68,12 @@ export function DevelopersSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            So arbeiten wir
+            Das Problem
           </span>
-          <h2 className="text-6xl md:text-7xl lg:text-[96px] font-display tracking-tight leading-[0.9]">
-            Content mit
+          <h2 className="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">
+            Du postest regelmäßig —
             <br />
-            <span className="text-muted-foreground">System.</span>
+            <span className="text-muted-foreground">aber es passiert nichts?</span>
           </h2>
         </div>
 
@@ -84,8 +84,7 @@ export function DevelopersSection() {
           }`}
         >
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-md">
-            Kein Rätselraten, keine leeren Versprechen. Unser Prozess ist
-            strukturiert, transparent und auf Ergebnisse ausgerichtet.
+            Dein Content sieht gut aus, bringt aber keine Kunden? Du hast eine Agentur ausprobiert, aber nur hübsche Posts bekommen — statt Anfragen?
           </p>
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => (
@@ -101,6 +100,9 @@ export function DevelopersSection() {
               </div>
             ))}
           </div>
+          <p className="mt-12 text-lg text-foreground font-medium leading-relaxed max-w-md">
+            Das Problem ist nicht dein Content. Es ist die fehlende Strategie dahinter.
+          </p>
         </div>
       </div>
     </section>
